@@ -12,26 +12,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
+
     padding: 20px;
 
-    .header-image{
-        width: 18.7rem;
-        height: 18.7rem;
-        border-radius: 12px;
-        background-image: url(${props => props.nft});
-        background-size:     cover;                      /* <------ */
-        background-repeat:   no-repeat;
-        background-position: center center;  
-
-    }
-
-
-    .header-image:hover{
-        background-image: linear-gradient(to right, rgba(1, 255, 247, .6), rgba(1, 255, 247, .6)), url(${props => props.nft});
-        cursor: pointer;
-    }
-   
-   
 
     p{
         color: var(--gray); 
@@ -43,6 +26,36 @@ export const Content = styled.div`
         background-color: var(--gray);
         border: none;
     }
+
+    ${'' /* NFT image, change color on hover, shows icon */}
+    
+    .header-image{
+        width: 18.7rem;
+        height: 18.7rem;
+        border-radius: 12px;
+        background-image: url(${props => props.nft});
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;  
+        text-align: center;
+    }
+
+    .header-image img{
+        margin-top: 8rem;
+        display: none;
+    }
+
+    .header-image:hover{
+        background-image: linear-gradient(to right, rgba(1, 255, 247, .6), rgba(1, 255, 247, .6)), url(${props => props.nft});
+        cursor: pointer;
+
+        img{
+            display: inline;
+        }
+
+    }
+   
+    ${'' /* info class, shows how many days are left, and price in ETH */}
 
     .info{
         display: flex;

@@ -12,13 +12,17 @@ import view_image from "../images/icon-view.svg"
 const Card = () => (
     <Wrapper>
      <Content nft={nft_image}>
-        <div className="header-image"  >
-            {/* <img src={nft_image} alt='nft'/> */}
-            {/* <img src={view_image} id='viewIcon' alt='view' /> */}
+
+        {/* Header of the card, contains image */}
+        <div className="header-image">
+            <img src={view_image} id='viewIcon' alt='view' />
         </div>
+
+        {/* Title of the card  */}
         <h2>Equilibrium #3429</h2>
         <p>Our Equilibrium collection promotes balance and calm...</p>
 
+        {/* More info on the current NFT  */}
         <div className='info'>
             <div>
                 <img src={eth} alt='ethereum symbol'/>
