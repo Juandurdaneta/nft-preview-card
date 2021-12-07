@@ -21,7 +21,7 @@ const Card = () => (
 
         {/* Title of the card  */}
         <h2>Equilibrium #3429</h2>
-        <p>Our Equilibrium collection promotes balance and calm...</p>
+        <p>Our Equilibrium collection promotes balance and calm</p>
 
         {/* More info on the current NFT  */}
         <div className='info'>
