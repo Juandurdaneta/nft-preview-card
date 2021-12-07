@@ -81,4 +81,29 @@ export const Content = styled.div`
         }
     }
 
+    .owner-info{
+        display: flex;
+
+        img{
+            margin-top: 10px;
+            margin-right: 15px;
+            width: 2.3rem;
+            height: 2.3rem;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 1px;
+        }   
+
+        span{
+            color: white;
+        }
+
+        span:hover{
+            color: var(--cyan);
+            cursor: pointer;
+        }
+
+    }
+
+
 `

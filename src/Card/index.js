@@ -8,6 +8,7 @@ import nft_image from "../images/image-equilibrium.jpg"
 import eth from "../images/icon-ethereum.svg"
 import clock from "../images/icon-clock.svg"
 import view_image from "../images/icon-view.svg"
+import image_avatar from "../images/image-avatar.png"
 
 const Card = () => (
     <Wrapper>
@@ -36,6 +37,13 @@ const Card = () => (
         </div>
 
         <hr />
+
+        {/* Info on the owner of the NFT  */}
+
+        <div className="owner-info">
+            <img src={image_avatar} alt="avatar"/>
+            <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
 
      </Content>
     </Wrapper>
